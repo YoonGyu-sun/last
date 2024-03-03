@@ -106,53 +106,52 @@ const sub = () => {
      modal.style.display = "none";
    }
  }
-
  let username = "";
-  document.addEventListener('DOMContentLoaded', function() {
-  username = localStorage.getItem('userName');
+ document.addEventListener('DOMContentLoaded', function() {
+ username = localStorage.getItem('userName');
 
-  const loginContainer = document.querySelector('.log-in-icon');
-  if (username !== null)  {
-        document.getElementById('userWelcomeMessage').textContent =` ${username} 님` ;
-        document.getElementById('login-signup').innerHTML =
+ const loginContainer = document.querySelector('.log-in-icon');
+ if (username !== null)  {
+       document.getElementById('userWelcomeMessage').textContent =` ${username} 님` ;
+       document.getElementById('login-signup').innerHTML =
 `<li><a href = "MyPage.html">
-      <img 
-      src="https://img.cgv.co.kr/R2014/images/common/ico/loginMember.png" 
-      alt="MY Page">
-      <span>My Page</span>
-  </a>
+     <img 
+     src="https://img.cgv.co.kr/R2014/images/common/ico/loginMember.png" 
+     alt="MY Page">
+     <span>My Page</span>
+ </a>
 </li>`
-        userWelcomeMessage.style.cursor = 'default'; 
-        
-        
-    } else {  
-      document.getElementById('login-signup').innerHTML = `<li class="log-in-icon"><a href="Login.html">
-      <span class="logingone">
-      <img 
-      src="https://img.cgv.co.kr/R2014/images/common/ico/loginPassword.png" 
-      alt="로그인" class="login-img">
-      <span> Log in </span>
-      </span>
-  </a>
+       userWelcomeMessage.style.cursor = 'default'; 
+       
+       
+   } else {  
+     document.getElementById('login-signup').innerHTML = `<li class="log-in-icon"><a href="Login.html">
+     <span class="logingone">
+     <img 
+     src="https://img.cgv.co.kr/R2014/images/common/ico/loginPassword.png" 
+     alt="로그인" class="login-img">
+     <span> Log in </span>
+     </span>
+ </a>
 </li>
 <li><a href = "SignUp.html">
-  <span class="signupgone"></span>
-  <img 
-  src="https://img.cgv.co.kr/R2014/images/common/ico/loginJoin.png" 
-  alt="회원가입">
-  <span>Sign up</span>
-   </a>
+ <span class="signupgone"></span>
+ <img 
+ src="https://img.cgv.co.kr/R2014/images/common/ico/loginJoin.png" 
+ alt="회원가입">
+ <span>Sign up</span>
+  </a>
 </li>
 <li><a href = "MyPage.html">
-      <img 
-      src="https://img.cgv.co.kr/R2014/images/common/ico/loginMember.png" 
-      alt="MY Page">
-      <span>My Page</span>
-  </a>
+     <img 
+     src="https://img.cgv.co.kr/R2014/images/common/ico/loginMember.png" 
+     alt="MY Page">
+     <span>My Page</span>
+ </a>
 </li>`;
 
-    }
-  } 
+   }
+ } 
 );
 
 
